@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+ul,li{
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+body{
+    font-family: "apercu",sans-serif;
+}
+
+.nav_top{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    width: 100%;
+    border: 1px solid #e6eaea;
+}
+
+.nav_menu{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    min-width: 115px;
+    height: 70px;
+    border-right: 1px solid #e6eaea;
+}
+
+.nav_menu a {
+    color: black;
+    font-size: 13px;
+
+}
+
+.nav_logo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;  
+    height: 70px;
+    width:65%;
+}
+.logo {
+    margin-left: 3rem;
+}
+
+.search{
+    display: flex;
+    justify-content: center;
+    width: 1rem;
+    
+}
+.search i {
+    font-size: 13px;
+}
+
+.login{
+    font-size: 13px;
+    font-weight: bold;
+}
+.login a {
+    color: black;
+}
+
+.submit{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #49C5B6;
+    width: 190px;
+    height: 70px;
+    font-size: 14px;
+}
+
+.submit a {
+    color: white;
+}
+
+.hidden_search {
+    display: flex;
+    justify-content: flex-end;
+    width: 1rem;
+    min-width: 70px;
+}
+.hidden_search i {
+    font-size: 15px;
+    color: black;
+}
+
+@media screen and (min-width:1006px) {
+    .hidden_search{
+        display: none;
+    }
+}
+@media screen and (max-width:1332px) {
+    .nav_logo{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;  
+        height: 70px;
+        width:50%;
+    }
+}
+
+@media screen and (max-width: 1010px) {
+    .login {
+        display: none;
+    }
+    .search {
+        display: none;
+    }  
+}
+@media screen and (max-width:780px) {
+    .submit {
+        display: none;
+    }
+    .hidden_search {
+        margin-right: 2rem;
+    }
+    .nav_menu {
+    min-width: 60px;   
+    }
+    .nav_menu span {
+        display: none;
+    }
+    .nav_menu i {
+        font-size: 15px;
+    }
+}
